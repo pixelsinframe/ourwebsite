@@ -1,0 +1,154 @@
+<!-- ... existing code ... -->
+<div class="qr-code-wrapper">
+    <label for="qrCodeType"><strong>SELECT TYPE</strong></label>
+    <select id="qrCodeType">
+        <option value="url">URL</option>
+        <option value="text">Text</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone Number</option>
+        <option value="sms">SMS</option>
+        <option value="vcard">vCard</option>
+        <option value="wifi">Wi-Fi</option>
+        <option value="geo">Geolocation</option>
+    </select>
+    <br><br>
+
+    <div id="inputFields">
+        <label for="qrCodeInput"><strong>ENTER DATA</strong></label>
+        <input type="text" id="qrCodeInput" placeholder="Enter data here">
+    </div>
+
+    <button type="button" id="qrCodeGenerate">Generate</button> <br> <br> <br>
+    <p id="errorMessage" style="color: red; display: none;">Please enter data.</p> <br>
+    <div id="qrCodeContainer" class="qr-code-container"></div> <br>
+    <a id="downloadBtn" href="#" download="qrcode.png" style="display:none;">Download QR Code</a>
+</div>
+<!-- ... existing code ... -->
+
+<script>
+    const inputFields = document.getElementById("inputFields");
+    const qrCodeType = document.getElementById("qrCodeType");
+    const button = document.getElementById("qrCodeGenerate");
+    const qrCodeContainer = document.getElementById("qrCodeContainer");
+    const downloadBtn = document.getElementById("downloadBtn");
+    const errorMessage = document.getElementById("errorMessage");
+
+    const qrCode = new QRCodeStyling({
+        width: 280,
+        height: 280,
+        dotsOptions: {
+            color: "#ff4500",
+            type: "rounded"
+        },
+        backgroundOptions: {
+            color: "#ffffff"
+        }
+    });
+
+    qrCodeType.addEventListener("change", () => {
+        inputFields.innerHTML = ''; // Clear previous input fields
+        switch (qrCodeType.value) {
+            case "url":
+            case "text":
+            case "email":
+            case "phone":
+            case "sms":
+                inputFields.innerHTML = `
+          <label for="qrCodeInput"><strong>ENTER DATA</strong></label>
+          <input type="text" id="qrCodeInput" placeholder="Enter data here">
+        `;
+                break;
+            case "vcard":
+                inputFields.innerHTML = `
+          <label for="qrCodeName"><strong>NAME</strong></label>
+          <input type="text" id="qrCodeName" placeholder="Enter name here">
+          <label for="qrCodeEmail"><strong>EMAIL</strong></label>
+          <input type="text" id="qrCodeEmail" placeholder="Enter email here">
+          <label for="qrCodePhone"><strong>PHONE</strong></label>
+          <input type="text" id="qrCodePhone" placeholder="Enter phone number here">
+        `;
+                break;
+            case "wifi":
+                inputFields.innerHTML = `
+          <label for="qrCodeSSID"><strong>SSID</strong></label>
+          <input type="text" id="qrCodeSSID" placeholder="Enter SSID here">
+          <label for="qrCodePassword"><strong>PASSWORD</strong></label>
+          <input type="text" id="qrCodePassword" placeholder="Enter password here">
+          <label for="qrCodeEncryption"><strong>ENCRYPTION</strong></label>
+          <select id="qrCodeEncryption">
+            <option value="WPA">WPA/WPA2</option>
+            <option value="WEP">WEP</option>
+            <option value="nopass">No Encryption</option>
+          </select>
+        `;
+                break;
+            case "geo":
+                inputFields.innerHTML = `
+          <label for="qrCodeLat"><strong>LATITUDE</strong></label>
+          <input type="text" id="qrCodeLat" placeholder="Enter latitude here">
+          <label for="qrCodeLon"><strong>LONGITUDE</strong></label>
+          <input type="text" id="qrCodeLon" placeholder="Enter longitude here">
+        `;
+                break;
+        }
+    });
+
+    button.addEventListener("click", () => {
+        const input = document.getElementById("qrCodeInput");
+        const qrCodeName = document.getElementById("qrCodeName");
+        const qrCodeEmail = document.getElementById("qrCodeEmail");
+        const qrCodePhone = document.getElementById("qrCodePhone");
+        const qrCodeSSID = document.getElementById("qrCodeSSID");
+        const qrCodePassword = document.getElementById("qrCodePassword");
+        const qrCodeEncryption = document.getElementById("qrCodeEncryption");
+        const qrCodeLat = document.getElementById("qrCodeLat");
+        const qrCodeLon = document.getElementById("qrCodeLon");
+
+        let data;
+        switch (qrCodeType.value) {
+            case "url":
+            case "text":
+                data = input.value;
+                break;
+            case "email":
+                data = `mailto:${input.value}`;
+                break;
+            case "phone":
+                data = `tel:${input.value}`;
+                break;
+            case "sms":
+                data = `sms:${input.value}`;
+                break;
+            case "vcard":
+                data = `BEGIN:VCARD\nVERSION:3.0\nFN:${qrCodeName.value}\nEMAIL:${qrCodeEmail.value}\nTEL:${qrCodePhone.value}\nEND:VCARD`;
+                break;
+            case "wifi":
+                data = `WIFI:T:${qrCodeEncryption.value};S:${qrCodeSSID.value};P:${qrCodePassword.value};;`;
+                break;
+            case "geo":
+                data = `geo:${qrCodeLat.value},${qrCodeLon.value}`;
+                break;
+            default:
+                data = input.value;
+        }
+
+        if (!data || data.trim() === "") {
+            errorMessage.style.display = "block";
+            return;
+        }
+        errorMessage.style.display = "none";
+
+        qrCode.update({
+            data: data
+        });
+        qrCode.append(qrCodeContainer);
+
+        qrCode.getRawData("png").then(blob => {
+            const url = URL.createObjectURL(blob);
+            downloadBtn.href = url;
+            downloadBtn.style.display = "inline";
+        }).catch(err => {
+            console.error(err);
+        });
+    });
+</script>

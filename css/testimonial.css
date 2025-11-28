@@ -1,0 +1,148 @@
+/* Testimonial */
+
+.more-about-us-container-outer {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 1rem 0.50rem;
+}
+
+
+
+.more-about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  min-height: 0;
+  padding: 2rem 0.00rem;
+  max-width: 1240px;
+}
+
+.more-about-us-container-introduction {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+
+}
+
+
+
+.more-about-us-container-introduction div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.50rem;
+}
+
+.logo-portfolio {
+  color: var(--clr-primary-orange);
+  font-size: clamp(30px, 5vw, 44px);
+  font-family: var(--ff-primary);
+  font-weight: 900;
+
+}
+
+.logo-portfolio-sub {
+  font-size: clamp(20px, 3vw, 30px);
+  font-family: var(--ff-secondary);
+  font-weight: 500;
+  line-height: var(--line-height);
+
+}
+
+.logo-portfolio-quote {
+  font-size: clamp(18px, 3vw, 20px);
+  font-family: var(--ff-secondary);
+  font-weight: 400 !important;
+
+
+
+
+}
+
+.talk-to-us-on-whatsapp {
+  color: var(--clr-accent-success) !important;
+  font-weight: 400;
+  color: var(--clr-primary-blue);
+  font-size: clamp(16px, 3vw, 18px);
+  line-height: var(--line-height);
+}
+
+
+
+.more-about-us-container-introduction h4 {
+  flex: 1;
+}
+
+
+
+
+.testimonial-container {
+  width: 100%;
+  width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap !important;
+  padding: 10px;
+  padding: 2rem 0rem;
+
+}
+
+.testimonial {
+  width: 120px;
+  padding: 0.50rem;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  margin-right: 1rem;
+}
+
+.oceantech-photo {
+  filter: grayscale(100%);
+}
+
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    width: 120px;
+  }
+
+  .testimonial-container {
+    max-width: 100% !important;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonial {
+    width: 120px;
+  }
+
+  .testimonial-container {
+    margin-right: 2rem;
+    max-width: 900px;
+
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .more-about-us-container-introduction {
+    flex-direction: column;
+  }
+
+
+
+  .more-about-us-container-outer {
+    max-width: 100%;
+  }
+
+
+}

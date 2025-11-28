@@ -1,0 +1,339 @@
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-primary-blue);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 1001;
+}
+
+.second-navbar-item {
+    display: flex;
+}
+
+.container-icon {
+    max-width: 100px;
+    cursor: pointer;
+}
+
+
+
+.second-navbar-item {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the right */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.list-item {
+    display: inline-block;
+    padding: 10px 5px;
+
+}
+
+.list-item a {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: clamp(16px, 3vw, 16px);
+    letter-spacing: 2.5px;
+    line-height: 3rem;
+    text-decoration: none;
+    position: relative;
+    color: white !important;
+    text-transform: capitalize;
+}
+
+.list-item a:hover {
+    transition: transform 250ms;
+    font-weight: 700;
+}
+
+.list-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--clr-primary-orange);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.list-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.menu {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.menu div {
+    width: 55px;
+    height: 10px;
+    background-color: var(--clr-primary-orange);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu.active .menu-line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu.active .menu-line2 {
+    opacity: 0;
+}
+
+.menu.active .menu-line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* Mobile Navigation */
+@media screen and (max-width: 1024px) {
+
+    .container-icon {
+        max-width: 150px !important;
+        height: 60px !important;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    header {
+        position: fixed;
+    }
+
+    .nav-list {
+        /* Optimized: Use transform for animation (faster than right property) */
+        position: fixed;
+        top: 70px;
+        /* Use CSS var for dynamic height if needed: top: var(--header-height, 70px); */
+        left: 0;
+        /* Full width from left */
+        height: calc(100vh - 70px);
+        width: 100%;
+        background-color: var(--clr-primary-blue);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        transform: translateX(100%);
+        /* Start off-screen */
+        transition: transform 0.5s ease;
+        /* GPU-friendly */
+        z-index: 999;
+        padding: 2rem 2rem 0 0;
+        /* Consistent padding */
+        will-change: transform;
+        /* Hint for browser optimization */
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+        /* Slide in */
+    }
+
+    .list-item {
+        margin: 0.5rem 0;
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 0.4s ease;
+        text-align: right;
+    }
+
+    .nav-list.active .list-item {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Cascade delays - unchanged, but consider reducing for faster mobile (e.g., 0.05s increments) */
+
+    .menu {
+        display: block;
+        position: relative;
+        z-index: 1001;
+    }
+
+    /* Enhanced body locking: Use CSS for everything, no JS top style */
+    body.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        /* Lock to current scroll */
+        left: 0;
+        right: 0;
+        /* To restore scroll in JS, we still need window.scrollTo, but no inline top */
+    }
+
+    /* Global body padding - make dynamic with var */
+    :root {
+        --header-height: 70px;
+    }
+
+    body {
+        padding-top: var(--header-height);
+    }
+
+    /* Remove .button-resources if not used in navbar; move to global CSS */
+    /* ... (footer styles: Extract to footer.css for modularity) ... */
+}
+
+/* From Uiverse.io by adamgiebl */
+.button-resources {
+    background: var(--clr-primary-orange);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.button-resources:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.button-resources:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--clr-primary-blue);
+
+}
+
+.footer-inner-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-inner-container-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-social-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.address-social-icons-container section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.50rem;
+}
+
+
+
+
+
+
+.footer-icon {
+    max-width: 100%;
+}
+
+
+
+.phone-number-span {
+    color: #25D366;
+    font-weight: 500;
+    font-family: var(--ff-secondary);
+    font-size: clamp(18px, 3vw, 24px);
+    text-transform: uppercase;
+}
+
+
+
+.cell {
+    font-weight: 500;
+    font-family: var(--ff-secondary);
+    font-size: clamp(18px, 3vw, 24px);
+    color: var(--clr-secondary-orange);
+    text-transform: uppercase;
+}
+
+.ouraddress {
+    color: var(--clr-primary-orange);
+    font-weight: 500;
+}
+
+.address {
+    color: var(--clr-neutral-200);
+    font-weight: 400 !important;
+    font-size: clamp(14px, 3vw, 18px) !important;
+}
+
+
+.phone-number {
+    font-family: var(--ff-primary);
+    font-size: clamp(16px, 3vw, 20px);
+    padding: 0.50rem;
+    color: var(--clr-neutral-200);
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.phone-number:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-primary-orange);
+}

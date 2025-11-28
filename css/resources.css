@@ -1,0 +1,142 @@
+.qr-code-wrapper-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1440px;
+}
+
+.qr-gen-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.gen-header-h {
+    line-height: 1;
+}
+
+.qr-gen-page section {
+    max-width: 550px;
+    padding: 1rem;
+}
+
+label {
+    padding-right: 1rem;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-semibold);
+}
+
+#qrCodeUrl {
+    padding-right: 1rem
+}
+
+#qrCodeGenerate {
+    background-color: var(--clr-primary);
+    color: var(--clr-background);
+}
+
+#qrCodeGenerate {
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid var(--clr-secondary);
+    color: var(--clr-background);
+    background: transparent;
+    z-index: 0;
+}
+
+#qrCodeGenerate:hover:after {
+    top: 0;
+    left: 0;
+}
+
+#qrCodeGenerate:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: var(--clr-primary);
+}
+
+.qr-code-wrapper {}
+
+.qr-code-container {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(235, 226, 225);
+    padding: 1rem;
+    background: transparent !important;;
+}
+
+canvas {}
+
+#downloadBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--clr-primary);
+    color: var(--clr-background);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#downloadBtn:hover {
+    background-color: var(--clr-secondary);
+
+}
+
+#loadingIndicator {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--clr-primary);
+}
+
+#qrCodeWifiInput,
+#qrCodeGeoInput {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#qrCodeWifiInput input,
+#qrCodeGeoInput input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.feature-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.feature-div section {
+    max-width: 500px;
+}
+
+li strong {
+    display: block;
+}
+
+li {
+    font-size: 18px;
+}

@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "pixelsinframe.com",
+  "Id": "fcecb78b-b8d7-432f-bbfb-e6385dd0d2d7"
+}

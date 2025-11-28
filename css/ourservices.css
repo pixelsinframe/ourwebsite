@@ -1,0 +1,127 @@
+/* Our Services */
+
+.services-outer-container {
+  
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vw;
+    padding: 2rem 0.50rem;
+    margin-top: 100px;
+}
+
+
+.our-services-items-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.our-services-items-container-section {
+    max-width: 1040px;
+    padding: 1rem
+}
+
+.intro-paragragh-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 700px;
+
+  
+}
+
+
+
+.our-services-items-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.our-services-items-list section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+    border-radius: 25px 25px 0 0;
+    background-color: var(--clr-neutral-100);
+    flex: 1 1 30%;
+    min-width: 300px;
+    padding-bottom: 1rem;
+    max-width: 30%;
+    border: 1px solid var(--clr-neutral-300);
+}
+
+.our-services-items-list section article {}
+
+
+
+.our-services-items-list section article:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 25px 25px 0 0;
+    max-height: 70%;
+    padding: 0.20rem;
+}
+
+.our-services-items-list section article:nth-child(1) img {
+    border-radius: 25px 25px 0 0;
+}
+
+.our-services-items-list section article:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+    padding: 0.50rem;
+}
+
+.our-services-items-list section article:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+    padding: 0.50rem;
+}
+
+.service-number {
+    font-weight: 900;
+    color: var(--clr-primary-blue);
+    font-size: clamp(20px, 3.5vw, 35px);
+}
+
+.service-name {
+    font-weight: 500;
+    font-size: clamp(18px, 3.5vw, 20px);
+    font-family: var(--ff-primary);
+}
+
+.service-info {
+    font-weight: 300;
+    font-size: clamp(16px, 2.5vw, 18px);
+}
+
+.see-details {
+    font-weight: 500;
+    font-size: clamp(16px, 3.5vw, 18px);
+
+}
+
+.see-details a {
+    color: var(--clr-primary-orange);
+
+}
+
+
+@media (max-width: 767px) {
+    .our-services-items-list section {
+        max-width: 100%;
+    }
+
+
+}

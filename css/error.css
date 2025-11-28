@@ -1,0 +1,88 @@
+/* Error Page  */
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    gap: 3rem;
+}
+
+.errorimage {
+    width: 700px;
+    height: 400px;
+}
+
+.error-page-title {
+    font-size: 16px;
+    color: slateblue;
+}
+
+.error-page-title span {
+    font-family: var(--ff-primary);
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--clr-primary-400) !important;
+}
+
+.css-button-arrow--black {
+    min-width: 130px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    margin-top: 5rem;
+}
+
+.css-button-arrow--black:hover {
+    border-radius: 5px;
+    padding-right: 8px;
+    padding-left: 24px;
+    background-color: var(--clr-accent);
+    color: whitesmoke;
+}
+
+.css-button-arrow--black:hover:after {
+    opacity: 1;
+    left: 10px;
+}
+
+.css-button-arrow--black:after {
+    content: "\00AB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    left: -20px;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+    .error-container {
+        text-align: center;
+        height: 80vh;
+        padding: 2rem;
+    }
+
+    .errorimage {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+
+}
