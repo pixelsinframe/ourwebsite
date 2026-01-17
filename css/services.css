@@ -350,13 +350,14 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  list-style-type: disc;
+  list-style-type: none;
+  padding: 0.50rem;
 }
 
 .our-services-items-container ul li {
-  max-width: 400px;
+  max-width: 200px;
   font-family: var(--ff-secondary);
-  font-size: clamp(16px, 5vw, 18px);
+  font-size: clamp(14px, 5vw, 16px);
   font-weight: 300;
   margin: 1rem;
   background-color: var(--clr-neutral-300);
@@ -366,7 +367,8 @@
 }
 
 .our-services-items-container ul li:hover {
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-secondary-blue);
+  color: var(--clr-neutral-100);
 }
 
 .our-services-items-container ul li strong {
@@ -376,4 +378,11 @@
   display: block;
   margin-bottom: 1rem;
   color: var(--clr-primary-blue);
+}
+
+
+
+
+.our-services-items-container ul li:hover  strong {
+  color: var(--clr-secondary-orange);
 }

@@ -1,9 +1,8 @@
-   
    .container-outer {
        width: 100vw;
        min-height: 100vh;
        margin: 0 auto;
-       background-image: url('https://res.cloudinary.com/dhvalxorx/image/upload/v1745863516/Pixelsinframe/PNG/background_fh9j09.webp');
+       background-image: url('');
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
@@ -11,7 +10,9 @@
        flex-direction: column;
        align-items: center;
        justify-content: center;
+       background-color: chocolate;
    }
+
    /* Services Section */
 
 
@@ -212,20 +213,8 @@
    }
 
 
-   .service-details-callout,.local-service-callout {
+   .service-details-callout {
        padding: 2rem 1rem;
        background-color: var(--clr-primary-orange)
    }
 
-
-.call-out-link {
-    font-family: var(--ff-primary);
-    color: var(--clr-secondary);
-    font-weight: 400;
-}
-
-.call-out-link:hover {
-    font-family: var(--ff-primary);
-    color: var(--clr-primary-blue);
-    font-weight: 500;
-}
