@@ -10,11 +10,11 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     top: 0;
     z-index: 1;
-    max-width: 1240px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 1rem 1rem;
 }
@@ -32,7 +32,7 @@ header {
 }
 
 .container-icon {
-    max-width: 100px;
+    max-width: 300px;
     cursor: pointer;
 }
 

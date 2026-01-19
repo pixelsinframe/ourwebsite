@@ -136,8 +136,7 @@
   width: 100vw;
   max-width: 1340px;
   margin: 0 auto;
-  padding: 2rem 0.50rem;
-  margin-top: 100px;
+  padding: 1;
 }
 
 
@@ -276,24 +275,17 @@
 }
 
 
-.our-story-paragraph {}
-
-
-
-
-
-
-
 
 
 /* Featured Works */
 
 .featured-works-outer-container {
-  background-color: var(--clr-primary-orange);
-  min-height: 0;
+  min-height: 100dvh;
   display: flex;
-  width: 100vw;
-  padding: 2rem 0.50rem;
+  width: 90vw;
+  max-width: 1340px;
+  margin: 0 auto;
+
 }
 
 .featuredworks {
@@ -301,14 +293,15 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 4rem 0.50rem;
+  gap: 5rem;
+  padding: 0.50rem;
 }
 
 .featured-works div {
   display: flex;
   justify-content: space-between;
   padding: 0.50rem;
+
 }
 
 
@@ -319,6 +312,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-between;
+  padding: 0.50rem;
 
 }
 
@@ -328,7 +322,7 @@
   justify-content: space-around;
   gap: 1rem;
   background-color: var(--clr-neutral-200);
-  padding: 1rem;
+  padding: 0.50rem;
   width: calc(50% - 2rem);
   min-width: 300px;
   box-shadow: 0 4px 8px var(--clr-primary-orange);
@@ -341,7 +335,7 @@
 
 .view-project,
 .lets-chat {
-  font-size: clamp(16px, 3vw, 18);
+  font-size: clamp(14px, 3vw, 16);
   font-weight: 400;
   color: var(--clr-primary-blue);
   font-family: var(--ff-primary);
@@ -356,28 +350,28 @@
 
 .printatvera {
   color: #005163 !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   text-transform: uppercase;
   font-family: var(--ff-primary);
 }
 
 .airmarineafrica {
   color: #8B0000 !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   text-transform: uppercase;
   font-family: var(--ff-primary);
 }
 
 .posh-angels {
   color: #8B4513 !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   text-transform: uppercase;
   font-family: var(--ff-primary);
 }
 
 .neec-nonso {
   color: #800020 !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   text-transform: uppercase;
   font-family: var(--ff-primary);
 }
