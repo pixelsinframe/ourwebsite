@@ -47,21 +47,6 @@
     transform: scale(.8);
 }
 
-.past-clients-container {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    width: 100%;
-    margin: 0 auto;
-
- 
-}
-
-.past-clients-container section:nth-child(1) {
-    padding-left: 3rem;
-}
-
 
 
 

@@ -127,8 +127,7 @@ header {
 @media screen and (max-width: 1024px) {
 
     .container-icon {
-        max-width: 150px !important;
-        height: 60px !important;
+        max-width: 80% !important;
         cursor: pointer;
     }
 
