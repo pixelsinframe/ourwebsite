@@ -66,16 +66,7 @@ function initInfiniteGallery(trackId, options = {}) {
       }
 
       galleryTrack.style.transform = `translateX(${currentTranslate}px)`;
-
-      // Debug log every ~1s
-      if (currentTime - lastLogTime >= 1000) {
-        //console.log(
-        //  `Translate: ${currentTranslate.toFixed(1)}px, speed=${speed.toFixed(
-        //    4
-       //   )}px/ms`
-     //   );
-        lastLogTime = currentTime;
-      }
+      lastLogTime = currentTime;
     }
 
     lastTime = currentTime;
@@ -91,11 +82,6 @@ function initInfiniteGallery(trackId, options = {}) {
     }
     galleryTrack.style.width = `${totalWidth * 3}px`;
     speed = totalWidth / (duration * 1000);
- //   console.log(
- //     `Init complete: totalWidth=${totalWidth}px, speed=${speed.toFixed(
- //       4
- //     )}px/ms`
- //   );
     animationId = requestAnimationFrame(animate);
   }
 
@@ -177,13 +163,10 @@ function initInfiniteGallery(trackId, options = {}) {
 window.addEventListener(
   "load",
   () => {
-    //console.log("Window loaded - initializing gallery");
     initInfiniteGallery("galleryTrack", { duration: 30 });
   },
   { once: true }
 );
-
 if (document.readyState === "complete") {
   initInfiniteGallery("galleryTrack", { duration: 30 });
 }
-
