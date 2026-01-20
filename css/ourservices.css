@@ -1,7 +1,7 @@
 /* Our Services */
 
 .services-outer-container {
-  
+
     min-height: 0;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
     gap: 1rem;
     max-width: 700px;
 
-  
+
 }
 
 
@@ -128,58 +128,58 @@
 
 /* Service Location Links */
 .service-locations {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--clr-neutral-300);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--clr-neutral-300);
 }
 
 .service-locations h3 {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--clr-neutral-900);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--clr-neutral-900);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .location-links {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
 }
 
 .location-links li {
-  margin: 0;
+    margin: 0;
 }
 
 .location-links a {
-  display: block;
-  font-size: 13px;
-  color: var(--clr-primary-blue);
-  text-decoration: none;
-  padding: 0.4rem 0;
-  transition: all 0.2s ease;
+    display: block;
+    font-size: 13px;
+    color: var(--clr-primary-blue);
+    text-decoration: none;
+    padding: 0.4rem 0;
+    transition: all 0.2s ease;
 }
 
 .location-links a:hover {
-  color: var(--clr-primary-orange);
-  padding-left: 4px;
+    color: var(--clr-primary-orange);
+    padding-left: 4px;
 }
 
 /* Mobile Responsive for Service Locations */
 @media (max-width: 786px) {
-  .location-links {
-    grid-template-columns: 1fr;
-  }
+    .location-links {
+        grid-template-columns: 1fr;
+    }
 
-  .service-locations {
-    margin-top: 1rem;
-    padding-top: 1rem;
-  }
+    .service-locations {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
 
-  .location-links a {
-    font-size: 12px;
-  }
+    .location-links a {
+        font-size: 12px;
+    }
 }
