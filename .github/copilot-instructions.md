@@ -171,6 +171,116 @@ font-size: clamp(16px, 3vw, 18px); /* min, preferred, max */
 - **Mobile-first mindset**: Always test form and layout changes on mobile
 - **External deps**: Font Awesome (CDN), Google Fonts (CDN), ImageKit, Cloudinary
 
+## Location Services Pages - SEO Strategy
+
+Pixelsinframe now offers location-specific service pages for better local SEO targeting.
+
+### URL Naming Convention (Service-First + Location)
+
+**Pattern**: `/[service]-[location].html`
+
+**Examples:**
+
+- `/web-design-midrand.html` - Web design services in Midrand
+- `/logo-design-johannesburg.html` - Logo design in Johannesburg
+- `/printing-sandton.html` - Printing services in Sandton
+
+**Why this pattern:**
+
+- Matches high-intent search queries: "web design Midrand", "logo design Johannesburg"
+- Better keyword density for local SEO
+- Improved CTR in search results
+- Clear URL structure for users
+
+### Location Pages Structure
+
+Each location service page should include:
+
+1. **Meta Tags & Canonical URL**
+
+   - Title: `[Service] Services in [Location] | [Service Detail] | Pixelsinframe`
+   - Description: Include service type + location + pricing/USP
+   - Keywords: service + location variations
+   - Canonical: `/[service]-[location]`
+
+2. **Schema.org Markup**
+
+   - LocalBusiness schema with specific location address
+   - ServiceType specified (e.g., "Web Design & Development")
+   - PriceRange included for transparency
+   - Phone number and areaServed for local targeting
+
+3. **Content Structure**
+
+   ```html
+   <h1>[Service] Services in [Location]</h1>
+   <p class="hero-subtitle">[Service detail] + pricing</p>
+
+   <section class="services-grid">
+     <!-- 4 service-specific cards -->
+   </section>
+
+   <section class="location-info">
+     <h2>[Service] for [Location] Businesses</h2>
+     <!-- USPs, benefits, local advantages -->
+   </section>
+   ```
+
+4. **Location Footer Navigation**
+   - All location service pages include location-based footer
+   - Highlights current location with `.active` class
+   - Links to other locations: Midrand, Waterfall, Johannesburg, Sandton, Centurion
+
+### SEO Best Practices for Location Pages
+
+✅ **Do:**
+
+- Include service name + location in h1 and title tag
+- Use local keywords naturally in content (e.g., "Midrand businesses", "local studio")
+- Include LocalBusiness schema with specific address for each location
+- Link related pages (service detail pages, portfolio)
+- Mention pricing and concrete benefits for local audience
+- Add USPs specific to serving that location
+
+❌ **Don't:**
+
+- Duplicate content across location pages (customize for each location)
+- Over-stuff keywords or make content unnatural
+- Use different phone numbers for same business
+- Create pages for locations you don't actually serve
+
+### Current Location Service Pages
+
+**Created service-location pages (for Midrand):**
+
+- `/web-design-midrand.html` - Custom websites, e-commerce
+- `/logo-design-midrand.html` - Logo design, brand identity
+- `/printing-midrand.html` - Large format printing, signage
+
+**Base location overview pages (all 5 locations):**
+
+- `/services-midrand.html`
+- `/services-waterfall.html`
+- `/services-johannesburg.html`
+- `/services-sandton.html`
+- `/services-centurion.html`
+
+### Adding New Service-Location Pages
+
+**Template to follow:**
+
+1. Copy existing location service page HTML
+2. Update all occurrences of:
+   - Location name (Midrand → [New Location])
+   - Service name and variations
+   - Meta descriptions with location + pricing
+   - Schema.org areaServed field
+   - h1, hero subtitle, location info section
+   - All internal links
+3. Verify canonical URL is unique
+4. Add to sitemap.xml
+5. Test responsive design
+
 ## Quick Checklist for Changes
 
 - [ ] Use CSS variables for colors/fonts
@@ -180,3 +290,5 @@ font-size: clamp(16px, 3vw, 18px); /* min, preferred, max */
 - [ ] Close/verify all HTML tags
 - [ ] Check button hover states match brand colors
 - [ ] Update year in copyright automatically (handled by `scripts.js`)
+- [ ] For location pages: include location name in h1, title, and schema
+- [ ] Verify canonical URLs don't conflict with other pages
