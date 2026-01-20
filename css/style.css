@@ -391,7 +391,6 @@
 
 
 .studio-web-options-outer-container {
-  min-height: 70vh;
   margin: 0 auto;
   background-image: url('https://ik.imagekit.io/pixelsinframe/Pixelsinframe%20Creative%20Studio/PNG/pastel_equpam.webp?updatedAt=1756805835635');
   background-size: cover;
@@ -435,7 +434,7 @@
 
 .contact-me-and-studio-address-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -482,7 +481,7 @@ address {
 
 }
 
-contact-me-options p {
+.contact-me-options p {
   display: flex;
   align-items: center;
   gap: 1rem;

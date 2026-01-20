@@ -582,7 +582,7 @@
 
         <div class="footer-icon-container">
           <a href="/"> <img class="footer-icon"
-              src="https://ik.imagekit.io/pixelsinframe/Pixelsinframe%20Creative%20Studio/PNG/Untitled-2_h5wo1i.png?updatedAt=1756805855896"
+              src="https://ik.imagekit.io/pixelsinframe/Pixelsinframe%20Creative%20Studio/Branding/Asset%201@2x.png"
               alt="logo for pixelsinframe digital agency">
           </a>
         </div>

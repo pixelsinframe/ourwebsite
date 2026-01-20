@@ -258,18 +258,13 @@ footer {
     padding: 1rem;
 }
 
-.footer-inner-container-one {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .address-social-icons-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    padding: 0.80rem;
 }
 
 .address-social-icons-container section {
@@ -280,12 +275,8 @@ footer {
 }
 
 
-
-
-
-
 .footer-icon {
-    max-width: 100%;
+    max-width: 70%;
 }
 
 
