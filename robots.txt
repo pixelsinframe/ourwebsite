@@ -2,4 +2,26 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow: 
+
+# Allow specific crawlers to index content faster
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawling of private directories (if any)
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /thankyou
+Disallow: /page-not-found
+
+# Crawl delay to prevent server overload
+User-agent: *
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.pixelsinframe.com/sitemap.xml
