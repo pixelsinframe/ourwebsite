@@ -1,218 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-  <url>
-    <loc>https://www.pixelsinframe.com/</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/studio</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourstory</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourservices</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourportfolio</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/contactus</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourservices/brandinganddesign</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourservices/web-development</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourservices/content-creation</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/web-developer-in-midrand</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourservices/printingshop</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourportfolio/printatvera</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourportfolio/airmarine</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourportfolio/poshangels</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourportfolio/neecnonso</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/ourservices/digital-markerting</loc>
-    <lastmod>2025-09-09T17:33:42+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-
-  <!-- Web Design Location Pages -->
-  <url>
-    <loc>https://www.pixelsinframe.com/web-design-midrand</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/web-design-waterfall</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/web-design-johannesburg</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/web-design-sandton</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/web-design-centurion</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <!-- Logo Design Location Pages -->
-  <url>
-    <loc>https://www.pixelsinframe.com/logo-design-midrand</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/logo-design-waterfall</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/logo-design-johannesburg</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/logo-design-sandton</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/logo-design-centurion</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <!-- Printing Location Pages -->
-  <url>
-    <loc>https://www.pixelsinframe.com/printing-midrand</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/printing-waterfall</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/printing-johannesburg</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/printing-sandton</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/printing-centurion</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <!-- Location Hub Pages -->
-  <url>
-    <loc>https://www.pixelsinframe.com/services-midrand</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/services-waterfall</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/services-johannesburg</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/services-sandton</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.pixelsinframe.com/services-centurion</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://pixelsinframe.com/</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/studio</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourstory</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourportfolio</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/contactus</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/services-midrand</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/services-waterfall</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/services-johannesburg</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/services-sandton</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/services-centurion</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/brandinganddesign</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/./ourservices/web-development</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/content-creation</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourportfolio/printatvera</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/./ourportfolio/printatvera</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourportfolio/airmarine</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourportfolio/poshangels</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/tel:0105959834</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/brandinganddesign</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/printingshop</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/content-creation</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/digital-markerting</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourportfolio/printatvera</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourportfolio/airmarine</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourportfolio/poshangels</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/web-development</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
+<url>
+  <loc>http://pixelsinframe.com/ourservices/printingshop</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-01-21</lastmod>
+</url>
 </urlset>
