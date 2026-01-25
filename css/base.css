@@ -457,13 +457,14 @@ main {
 }
 
 /* Reusable Container */
+
 .reusedable-container {
   max-width: 1340px;
   margin: 0 auto;
-  padding: 4rem 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 3rem;
   justify-content: center;
   min-height: 100dvh;
 }
@@ -484,107 +485,18 @@ main {
   }
 }
 
-/* Services Locations Footer */
-.services-locations-footer {
-  background-color: var(--clr-neutral-200);
-  padding: 3rem 2rem;
-  border-top: 2px solid var(--clr-neutral-300);
+
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--clr-primary-blue);
+  color: white;
+  padding: 8px;
+  z-index: 100;
 }
 
-.services-locations-footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.services-locations-footer h3 {
-  font-family: var(--ff-secondary);
-  font-size: clamp(24px, 4vw, 32px);
-  color: var(--clr-primary-blue);
-  margin: 0 0 0.5rem 0;
-  font-weight: 600;
-}
-
-.services-locations-footer p {
-  font-family: var(--ff-primary);
-  font-size: clamp(14px, 2vw, 16px);
-  color: var(--clr-neutral-700);
-  margin: 0 0 1.5rem 0;
-}
-
-.locations-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  width: 100%;
-}
-
-.location-link {
-  padding: 0.75rem 1rem;
-  background-color: var(--clr-neutral-100);
-  color: var(--clr-primary-blue);
-  border: 2px solid var(--clr-neutral-300);
-  border-radius: 8px;
-  text-decoration: none;
-  font-family: var(--ff-primary);
-  font-size: clamp(14px, 2vw, 16px);
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.location-link:hover {
-  background-color: var(--clr-primary-blue);
-  color: var(--clr-neutral-100);
-  border-color: var(--clr-primary-blue);
-}
-
-.location-link.active {
-  background-color: var(--clr-primary-orange);
-  color: var(--clr-neutral-100);
-  border-color: var(--clr-primary-orange);
-  font-weight: 700;
-}
-
-/* Mobile responsive for locations grid */
-@media (max-width: 1024px) {
-  .locations-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .locations-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-  }
-
-  .services-locations-footer {
-    padding: 2rem 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .locations-grid {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
-
-  .location-link {
-    padding: 0.65rem 0.75rem;
-    font-size: 13px;
-  }
-
-  .services-locations-footer h3 {
-    font-size: 20px;
-    margin-bottom: 0.3rem;
-  }
-
-  .services-locations-footer p {
-    font-size: 12px;
-    margin-bottom: 1rem;
-  }
+.skip-link:focus {
+  top: 0;
 }

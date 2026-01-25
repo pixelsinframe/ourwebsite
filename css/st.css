@@ -82,7 +82,7 @@
   display: none;
   margin: 10px 0 0;
   line-height: 1.3;
-  font-size: clamp(15px, 2vw, 16px);
+  font-size: clamp(16px, 3vw, 18px);
   max-width: 90%;
 }
 

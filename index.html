@@ -149,6 +149,8 @@ studio or call 072-703-3585",
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
 
   <img class="backToTopBtn" id="myBtn"
     src="https://ik.imagekit.io/pixelsinframe/Pixelsinframe%20Creative%20Studio/Icons/arrow-up-in-a-circle_kx4p7n.png?updatedAt=1756805814397"
@@ -182,7 +184,7 @@ studio or call 072-703-3585",
       </div>
 
 
-      <div class="menu" aria-hidden="true">
+      <div class="menu" aria-expanded="false" role="button" tabindex="0">
 
         <div class="menu-line1"></div>
         <div class="menu-line2"></div>
@@ -198,63 +200,53 @@ studio or call 072-703-3585",
 
   <!-- Landing Page -->
 
-  <div class="main-container">
+  <div class="main-container" id="#main-content">
 
     <div class="landing-page-container">
 
-      <div class='introduction-to-company'>
+      <section class="hero-words-section">
 
-        <section class="hero-words-section">
+        <h1 class="landing-page-title">Midrand's Full-Service Creative Studio</h1>
 
-          <h1 class="landing-page-title">Midrand's Full-Service Creative Studio</h1>
+        <p class="landing-page-subtitle">
+          Professional branding, custom websites, and high-impact print, delivered by a team that understands local
+          business.
+        </p>
 
-          <p class="landing-page-subtitle">
-            Professional branding, custom websites, and high-impact print, delivered by a team that understands local
-            business.
-          </p>
+        <p class="hero-paragraph">
+          From our Innovation Worx studio, we've helped 50+ Midrand businesses
+          build their brands, launch online, and grow their customer base.
+          Whether you need a new logo, a complete website, or 100 business
+          cards by tomorrow—we've got you.
+        </p>
 
+        <div class="hero-cta">
+          <a class="btn-get-in-touch"
+            href="https://wa.me/27727033585?text=Hi!%20I'd%20like%20to%20get%20a%20free%20quote%20from%20Pixelsinframe.%20Can%20we%20discuss%20my%20project%3F"
+            title="Get your free quote from Pixelsinframe">
+            Start Your Project
+          </a>
 
+          <a class="btn-get-in-touch" href="/ourportfolio" title="Get your free quote from Pixelsinframe">
+            See Our Work
+          </a>
+          <a href="" class="btn-secondary"></a>
+        </div>
 
-          <p class="hero-paragraph">
-            From our Innovation Worx studio, we've helped 50+ Midrand businesses
-            build their brands, launch online, and grow their customer base.
-            Whether you need a new logo, a complete website, or 100 business
-            cards by tomorrow—we've got you.
-          </p>
+        <div class="hero-trust-indicators">
+          <span>✓ 50+ Happy Clients</span>
+          <span>✓ Same-Day Studio Visits</span>
+          <span>✓ In-House Printing</span>
+        </div>
 
-          <div class="hero-cta">
-            <a class="btn-get-in-touch"
-              href="https://wa.me/27727033585?text=Hi!%20I'd%20like%20to%20get%20a%20free%20quote%20from%20Pixelsinframe.%20Can%20we%20discuss%20my%20project%3F"
-              title="Get your free quote from Pixelsinframe">
-              Start Your Project
-            </a>
+      </section>
 
-            <a class="btn-get-in-touch" href="/ourportfolio" title="Get your free quote from Pixelsinframe">
-              See Our Work
-            </a>
-            <a href="" class="btn-secondary"></a>
-          </div>
-
-          <div class="hero-trust-indicators">
-            <span>✓ 50+ Happy Clients</span>
-            <span>✓ Same-Day Studio Visits</span>
-            <span>✓ In-House Printing</span>
-          </div>
-
-
-
-
-
-        </section>
-
-      </div>
 
     </div>
 
   </div>
 
   <div class="reusedable-container">
-
 
     <section class="title-container">
 
@@ -278,7 +270,7 @@ studio or call 072-703-3585",
           src="https://ik.imagekit.io/pixelsinframe/Pixelsinframe%20Creative%20Studio/Icons/designer.png?updatedAt=1757068537525"
           alt="Design services icon for logo creation and brand development">
 
-        <h2 class="home-page-services-title">Brand Identity & Design</h2>
+        <h2 class="home-page-services-title">Branding & Design</h2>
 
         <p class="home-page-services-core-services">Make a lasting first impression</p>
 
@@ -624,34 +616,31 @@ studio or call 072-703-3585",
 
   <div class="more-about-us-container-outer reusedable-container">
 
-    <div class="more-about-us-container">
 
-      <div class="more-about-us-container-introduction">
+    <div class="more-about-us-container-introduction">
 
-        <div>
+      <div>
 
-          <h2 class="logo-portfolio title">Logo Portfolio</h2>
-          <p class="subtitle">Creating lasting impressions.</p>
+        <h2 class="logo-portfolio title">Logo Portfolio</h2>
+        <p class="subtitle">Creating lasting impressions.</p>
 
-        </div>
+      </div>
 
-        <div>
+      <div>
 
-          <p class="logo-portfolio-quote">
-            More than just a picture, a logo is a symbol of connection between your brand
-            and your audience
-          </p>
+        <p class="logo-portfolio-quote">
+          More than just a picture, a logo is a symbol of connection between your brand
+          and your audience
+        </p>
 
-          <p class="logo-portfolio-sub">
-            Need a logo ?
-            <a class="talk-to-us-on-whatsapp" href="">
-              talk to us on
-              whatsapp
-            </a>
-          </p>
+        <p class="logo-portfolio-sub">
+          Need a logo ?
+          <a class="talk-to-us-on-whatsapp" href="">
+            talk to us on
+            whatsapp
+          </a>
+        </p>
 
-
-        </div>
 
       </div>
 
@@ -998,19 +987,58 @@ studio or call 072-703-3585",
 
   </footer>
 
-  <section class="services-locations-footer">
-    <div class="container">
-      <h3>Services Across Gauteng</h3>
-      <p>Serving creative businesses in multiple locations</p>
-      <div class="locations-grid">
-        <a href="/services-midrand" class="location-link active">Midrand</a>
-        <a href="/services-waterfall" class="location-link">Waterfall</a>
-        <a href="/services-johannesburg" class="location-link">Johannesburg</a>
-        <a href="/services-sandton" class="location-link">Sandton</a>
-        <a href="/services-centurion" class="location-link">Centurion</a>
+  <div class="reusedable-container">
+
+    <section class="location-services-section">
+      <div class="section-header">
+        <h2>Services in Your Location</h2>
+        <p>Professional creative services available in Midrand, Waterfall, Johannesburg, Sandton, and Centurion</p>
       </div>
-    </div>
-  </section>
+
+      <div class="locations-grid">
+        <a href="/services-midrand" class="location-card">
+          <div class="location-card-content">
+            <h3>Midrand Services</h3>
+            <p>Web Design • Logo Design • Printing</p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+        <a href="/services-waterfall" class="location-card">
+          <div class="location-card-content">
+            <h3>Waterfall Services</h3>
+            <p>Web Design • Logo Design • Printing</p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+        <a href="/services-johannesburg" class="location-card">
+          <div class="location-card-content">
+            <h3>Johannesburg Services</h3>
+            <p>Web Design • Logo Design • Printing</p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+        <a href="/services-sandton" class="location-card">
+          <div class="location-card-content">
+            <h3>Sandton Services</h3>
+            <p>Web Design • Logo Design • Printing</p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+        <a href="/services-centurion" class="location-card">
+          <div class="location-card-content">
+            <h3>Centurion Services</h3>
+            <p>Web Design • Logo Design • Printing</p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
 
   <!-- Copyright Page -->
 
@@ -1029,8 +1057,8 @@ studio or call 072-703-3585",
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <!-- After gsap.min.js, before scripts.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-  <script src="scripts/scripts.js"></script>
-  <script src="scripts/gallery.js"></script>
+  <script src="scripts/scripts.js" defer></script>
+  <script src="scripts/gallery.js" defer></script>
   <script src="scripts/testimonial.js"></script>
   <script src="scripts/faq.js"></script>
 
