@@ -246,12 +246,16 @@ header {
 
 footer {
     background-color: var(--clr-primary-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 
 .footer-inner-container {
-    display: flex;
-    flex-direction: column;
+
     flex-wrap: wrap;
     max-width: 1440px;
     margin: 0 auto;
@@ -276,7 +280,7 @@ footer {
 
 
 .footer-icon {
-    max-width: 70%;
+    max-width: 80%;
 }
 
 
